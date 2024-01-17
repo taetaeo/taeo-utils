@@ -1,0 +1,14 @@
+{
+  "name": "taeo-utils",
+  "version": "1.0.0",
+  "description": "JS utils for everyone",
+  "main": "index.js",
+  "keywords": [
+    "taeo"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "taeo",
+  "license": "ISC"
+}

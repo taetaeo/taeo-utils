@@ -3,6 +3,7 @@
   "version": "1.0.3",
   "description": "JS utils for everyone",
   "main": "index.js",
+  "type": "module",
   "keywords": [
     "taeo"
   ],

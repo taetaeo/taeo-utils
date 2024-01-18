@@ -1,6 +1,6 @@
 {
   "name": "taeo-utils",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "JS utils for everyone",
   "main": "index.js",
   "type": "module",

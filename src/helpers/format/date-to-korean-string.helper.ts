@@ -9,7 +9,7 @@ type UnitsType = {
   month: string;
   day: string;
 };
-export function dateToStringHelper(date: string, units: UnitsType = { year: "년", month: "일", day: "월" }) {
+export function dateToKoreanStringHelper(date: string, units: UnitsType = { year: "년", month: "일", day: "월" }) {
   try {
     if (!date) {
       throw new Error("dateToStringHelper's Error 1 : 날짜가 제공되지 않았습니다.");

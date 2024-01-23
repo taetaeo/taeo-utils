@@ -9,4 +9,5 @@ export { phoneNumberToArrayHelper } from "./helpers/form/phone-number-to-array.h
 export { onlyNumberValidateHelper } from "./helpers/validate/only-number-validate.helper";
 // Format
 export { timeSplitFormatHelper } from "./helpers/format/time-split-format.helper";
-export { dateToStringHelper } from "./helpers/format/date-to-string.helper";
+export { dateToKoreanStringHelper } from "./helpers/format/date-to-korean-string.helper";
+export { timeToKoreanStringHelper } from "./helpers/format/time-to-korean-string.helper";

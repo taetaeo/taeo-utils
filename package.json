@@ -2,7 +2,7 @@
   "name": "taeo-utils",
   "author": "taeo",
   "license": "ISC",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "utils for everyone by Taeo",
   "type": "module",
   "main": "dist/index.js",

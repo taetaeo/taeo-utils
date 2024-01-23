@@ -5,8 +5,7 @@
  * @returns
  */
 
-function equalValueCheckerHelper(value1, value2) {
+export function equalValueCheckerHelper(value1, value2) {
   if (value1 !== value2) return false;
   return true;
 }
-module.exports = { equalValueCheckerHelper };

@@ -6,7 +6,7 @@
  * @param {*} inputDate
  * @returns yyyy-mm-dd hh:mm:ss
  */
-function datePlusYearHelper(inputDate, plusYear = 2) {
+export function datePlusYearHelper(inputDate, plusYear = 2) {
   try {
     let currentDate = new Date(inputDate);
 
@@ -24,4 +24,3 @@ function datePlusYearHelper(inputDate, plusYear = 2) {
     return "0000-00-00";
   }
 }
-module.exports = { datePlusYearHelper };

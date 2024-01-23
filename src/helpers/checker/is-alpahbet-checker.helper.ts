@@ -3,7 +3,10 @@
  * @param {*} alpahbet
  * @returns
  */
-export function isAlpahbetCheckerHelper(alpahbet) {
+
+type AlpahbetType = string;
+
+export function isAlpahbetCheckerHelper(alpahbet: AlpahbetType) {
   const isValid = /^[a-zA-Z\s]+$/.test(alpahbet);
   console.assert(typeof isValid === "boolean", `결과 : ${alpahbet} 확인이 실패하였습니다.`);
   return isValid;

@@ -2,18 +2,30 @@
   "name": "taeo-utils",
   "version": "1.0.5",
   "description": "JS utils for everyone",
-  "main": "index.js",
   "type": "module",
-  "keywords": [
-    "taeo"
-  ],
+  "main": "index.js",
+  "bugs": {
+    "url": "https://github.com/taetaeo/taeo-utils/issues"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "publish": "npm publish --access public"
+    "build": "tsc",
+    "clean": "rm -rf dist"
   },
   "author": "taeo",
   "license": "ISC",
   "dependencies": {
     "fs": "^0.0.1-security"
-  }
+  },
+  "keywords": [
+    "taeo",
+    "utils",
+    "helper"
+  ],
+  "contributors": [
+    {
+      "name": "TaeKwon Oh",
+      "email": "ohtk1119@gmail.com",
+      "url": "https://github.com/taetaeo"
+    }
+  ]
 }

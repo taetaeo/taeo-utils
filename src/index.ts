@@ -1,6 +1,7 @@
 // Checker
 export { isAlpahbetCheckerHelper } from "./helpers/checker/is-alpahbet-checker.helper";
 export { equalValueCheckerHelper } from "./helpers/checker/equal-value-checker.helper";
+export { isRefCheckerHelper } from "./helpers/checker/is-ref-checker.helper";
 // Date
 export { datePlusYearHelper } from "./helpers/date/date-plus-year.helper";
 //Form

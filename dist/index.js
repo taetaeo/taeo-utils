@@ -136,6 +136,49 @@ function timeToKoreanStringHelper(inputTime) {
   return `${hour}\uC2DC ${minute && minute + "\uBD84"} ${seconds && seconds + "\uCD08"}`;
 }
 
+// src/helpers/format/extraction-only-string.helper.ts
+function extractionOnlyStringHelper(inputText) {
+  console.assert(typeof inputText === "string", `\uACB0\uACFC \uC2E4\uD328 : \uC785\uB825\uAC12(${inputText})`);
+  if (typeof inputText !== "string") {
+    throw new Error(`extractionOnlyString\uC5D0\uC11C \uC5D0\uB7EC \uBC1C\uC0DD\uD588\uC2B5\uB2C8\uB2E4. \uC624\uC9C1 \uBB38\uC790\uC5F4 \uD0C0\uC785\uB9CC \uD5C8\uB77D\uB429\uB2C8\uB2E4.`);
+  }
+  const result = inputText.replace(/\d+/g, "");
+  return result;
+}
+
+// src/helpers/format/extraction-only-number.helper.ts
+function extractionOnlyNumber(inputText) {
+  let result;
+  console.assert(typeof inputText === "string", `\uACB0\uACFC \uC2E4\uD328 : \uC785\uB825\uAC12( ${inputText} )`);
+  if (typeof inputText !== "string") {
+    throw new Error(`extractionOnlyString\uC5D0\uC11C \uC5D0\uB7EC \uBC1C\uC0DD\uD588\uC2B5\uB2C8\uB2E4. \uC624\uC9C1 \uBB38\uC790\uC5F4 \uD0C0\uC785\uB9CC \uD5C8\uB77D\uB429\uB2C8\uB2E4.`);
+  }
+  result = [inputText.replace(/[^0-9]/g, ""), +inputText.replace(/[^0-9]/g, "")];
+  return result;
+}
+
+// src/helpers/format/extraction-only-alpahbet.helper.ts
+function extractionOnlyAlpahbetHelper(inputText) {
+  let result;
+  console.assert(typeof inputText === "string", `\uACB0\uACFC \uC2E4\uD328 : \uC785\uB825\uAC12( ${inputText} )`);
+  if (typeof inputText !== "string") {
+    throw new Error(`extractionOnlyString\uC5D0\uC11C \uC5D0\uB7EC \uBC1C\uC0DD\uD588\uC2B5\uB2C8\uB2E4. \uC624\uC9C1 \uBB38\uC790\uC5F4 \uD0C0\uC785\uB9CC \uD5C8\uB77D\uB429\uB2C8\uB2E4.`);
+  }
+  result = inputText.replace(/[^a-zA-Z]/g, "");
+  return result;
+}
+
+// src/helpers/format/extraction-only-korean.helper.ts
+function extractionOnlyKoreanHelper(inputText) {
+  let result;
+  console.assert(typeof inputText === "string", `\uACB0\uACFC \uC2E4\uD328 : \uC785\uB825\uAC12( ${inputText} )`);
+  if (typeof inputText !== "string") {
+    throw new Error(`extractionOnlyString\uC5D0\uC11C \uC5D0\uB7EC \uBC1C\uC0DD\uD588\uC2B5\uB2C8\uB2E4. \uC624\uC9C1 \uBB38\uC790\uC5F4 \uD0C0\uC785\uB9CC \uD5C8\uB77D\uB429\uB2C8\uB2E4.`);
+  }
+  result = inputText.replace(/[^가-힣]/g, "");
+  return result;
+}
+
 // src/helpers/language/korean-subject-particle-modify.helper.ts
 function koreanSubjectParticleModifyer(korean) {
   const charCode = korean.charCodeAt(korean.length - 1);
@@ -154,6 +197,10 @@ export {
   datePlusYearHelper,
   dateToKoreanStringHelper,
   equalValueCheckerHelper,
+  extractionOnlyAlpahbetHelper,
+  extractionOnlyKoreanHelper,
+  extractionOnlyNumber,
+  extractionOnlyStringHelper,
   isAlpahbetCheckerHelper,
   isDataCompareCheckerHelper,
   isRefCheckerHelper,

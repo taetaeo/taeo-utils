@@ -4,9 +4,17 @@
 
 > 이 래포는 자주쓰이는 여러가지 utils함수를 모음 팩입니다.
 >
+> This rappo is a pack of various frequently used utils functions.
+>
 > `taeo` 시리즈 중 utils를 다루고 있는 라이브러리입니다.
+>
+> This is a library that deals with utils in the `taeo` series.
 
-### 업데이트
+### Description
+
+- 설명서 보러가기 : https://taeo.gitbook.io/taeo/
+
+### Update Schedule
 
 | 일정       | 내용                                  | 버전          |
 | ---------- | ------------------------------------- | ------------- |

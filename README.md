@@ -12,7 +12,7 @@
 
 ### Description
 
-- 설명서 보러가기 : https://taeo.gitbook.io/taeo/
+- 설명서 보러가기(Go to the manual) : https://taeo.gitbook.io/taeo/
 
 ### Update Schedule
 
@@ -24,3 +24,12 @@
 | 2024.01.23 | `form`- 핸드폰번호 헬퍼 함수 추가     | 2.0.1         |
 | 2024.01.26 | 한국어의 조사관련 변환 기능 함수 추가 | 2.0.4         |
 | 2024.01.27 | 예외처리 기능 - 한글, 숫자, 알파벳    | 2.0.5         |
+
+### Community
+
+이메일을 보내주시거나 이슈를 통해 의견을 주시면 감사하겠습니다.
+Send me an email(ohtk1119@gmail.com) or Contribute on Issues, I glad to hear your suggestion.
+
+### License
+
+[MIT License](https://rmm5t.mit-license.org/)

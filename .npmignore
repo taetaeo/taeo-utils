@@ -2,3 +2,5 @@
 src
 test
 .github
+jest.config.js
+coverage

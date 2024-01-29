@@ -3,6 +3,8 @@ export { isAlpahbetCheckerHelper } from "./helpers/checker/is-alpahbet-checker.h
 export { equalValueCheckerHelper } from "./helpers/checker/equal-value-checker.helper";
 export { isRefCheckerHelper } from "./helpers/checker/is-ref-checker.helper";
 export { isDataCompareCheckerHelper } from "./helpers/checker/is-data-compare-checker.helper";
+//Calculation
+export { sumArrayHelper } from "./helpers/calculation/sum-array.helper";
 // Date
 export { datePlusYearHelper } from "./helpers/date/date-plus-year.helper";
 //Form

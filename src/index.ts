@@ -5,6 +5,7 @@ export { isRefCheckerHelper } from "./helpers/checker/is-ref-checker.helper";
 export { isDataCompareCheckerHelper } from "./helpers/checker/is-data-compare-checker.helper";
 // Date
 export { datePlusYearHelper } from "./helpers/date/date-plus-year.helper";
+export { getDateHelper } from "./helpers/date/get-date.helper";
 //Form
 export { phoneNumberToArrayHelper } from "./helpers/form/phone-number-to-array.helper";
 // Validate

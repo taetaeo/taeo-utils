@@ -20,3 +20,5 @@ export { extractionOnlyAlpahbetHelper } from "./helpers/format/extraction-only-a
 export { extractionOnlyKoreanHelper } from "./helpers/format/extraction-only-korean.helper";
 // language
 export { koreanSubjectParticleModifyer } from "./helpers/language/korean-subject-particle-modify.helper";
+
+export { default as localStorageModule } from "./modules/local-storage.module";

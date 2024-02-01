@@ -16,7 +16,7 @@ export { timeToKoreanStringHelper } from "./helpers/format/time-to-korean-string
 export { numberByCommaHelper } from "./helpers/format/number-by-comma.helper";
 export { extractionOnlyStringHelper } from "./helpers/format/extraction-only-string.helper";
 export { extractionOnlyNumber } from "./helpers/format/extraction-only-number.helper";
-export { extractionOnlyAlpahbetHelper } from "./helpers/format/extraction-only-alpahbet.helper";
+export { extractionOnlyAlphabetHelper } from "./helpers/format/extraction-only-alpahbet.helper";
 export { extractionOnlyKoreanHelper } from "./helpers/format/extraction-only-korean.helper";
 // language
 export { koreanSubjectParticleModifyer } from "./helpers/language/korean-subject-particle-modify.helper";

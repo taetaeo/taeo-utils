@@ -12,7 +12,17 @@
 
 ### Description
 
-- 설명서 보러가기(Go to the manual) : https://taeo.gitbook.io/taeo/
+- 자세한 설명은 이곳을 참고해주세요. [설명 보러가기](https://taeo.gitbook.io/taeo/)
+
+### How to use?
+
+```bash
+// npm
+$ npm install taeo-utils
+
+// yarn
+$ yarn add taeo-utils
+```
 
 ### Update Schedule
 
@@ -29,8 +39,8 @@
 
 ### Community
 
-이메일을 보내주시거나 이슈를 통해 의견을 주시면 감사하겠습니다.
-Send me an email(ohtk1119@gmail.com) or Contribute on Issues, I glad to hear your suggestion.
+- 이메일을 보내주시거나 이슈를 통해 의견을 주시면 감사하겠습니다.
+- Send me an email(ohtk1119@gmail.com) or Contribute on Issues, I glad to hear your suggestion.
 
 ### License
 

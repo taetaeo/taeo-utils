@@ -64,9 +64,8 @@ function remove(key: string): void | null {
 }
 
 /** 로컬 스토리지 모듈 */
-const localStorageModule = {
+export const localStorageModule = {
   get: get,
   set: set,
   remove: remove,
 };
-export default localStorageModule;

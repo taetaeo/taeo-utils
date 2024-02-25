@@ -23,4 +23,5 @@ export { extractionOnlyKoreanHelper } from "./helpers/format/extraction-only-kor
 export { koreanSubjectParticleModifyer } from "./helpers/language/korean-subject-particle-modify.helper";
 
 // Modules
-export { default as localStorageModule } from "./modules/local-storage.module";
+export { localStorageModule } from "./modules/local-storage.module";
+export { lodash as lodashModule } from "./modules/lodash.module";

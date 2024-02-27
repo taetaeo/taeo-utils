@@ -28,7 +28,7 @@ type DebouncedFunction<T extends (...args: any[]) => any> = (...args: Parameters
  */
 class Debounce {
   // Node.js의 타이머 식별자를 나타내며, 함수 호출 간의 디바운스를 관리합니다.
-  private timeoutId: NodeJS.Timeout | undefined;
+  private timeoutId: NodeJS.Timeout | undefined | any;
 
   /**
    * @description 디바운스된 함수를 생성하는 역할을 합니다.

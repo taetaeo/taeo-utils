@@ -25,3 +25,5 @@ export { koreanSubjectParticleModifyer } from "./helpers/language/korean-subject
 // Modules
 export { localStorageModule } from "./modules/local-storage.module";
 export { lodash as lodashModule } from "./modules/lodash.module";
+export { Stack } from "./modules/stack.module";
+export { Queue } from "./modules/queue.module";

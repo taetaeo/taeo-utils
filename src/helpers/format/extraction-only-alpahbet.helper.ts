@@ -5,8 +5,7 @@
  * @returns {string} 정규식을 거쳐 추출된 결과 숫자를 포함한 문자열에서 오직 '알파벳'의 형태만 추출한다.
  *
  */
-
-type ResultType = string;
+export type ResultType = string;
 export function extractionOnlyAlphabetHelper<T>(inputText: T): ResultType {
   let result: ResultType;
   console.assert(typeof inputText === "string", `결과 실패 : 입력값( ${inputText} )`);

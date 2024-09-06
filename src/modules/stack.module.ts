@@ -32,4 +32,4 @@ class Stack<S> extends TaeoArray<S> {
   }
 }
 
-export { Stack };
+export default Stack;

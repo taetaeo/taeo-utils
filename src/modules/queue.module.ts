@@ -32,4 +32,4 @@ class Queue<Q> extends TaeoArray<Q> {
   }
 }
 
-export { Queue };
+export default Queue;

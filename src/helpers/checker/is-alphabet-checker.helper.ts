@@ -4,7 +4,7 @@
  * @returns
  */
 
-type AlphabetType = string;
+export type AlphabetType = string;
 
 export function isAlphabetCheckerHelper(alphabet: AlphabetType) {
   const isValid = /^[a-zA-Z\s]+$/.test(alphabet);

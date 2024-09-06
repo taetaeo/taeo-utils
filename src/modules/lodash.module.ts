@@ -53,7 +53,6 @@ class Debounce {
   }
 }
 
-/** Lodash 모듈 */
-export const lodash = {
+export default {
   debounce: new Debounce().debounce,
 };

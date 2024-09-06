@@ -5,7 +5,7 @@
  * @returns
  */
 
-type ValueType = string | string[] | number | number[] | boolean | undefined;
+export type ValueType = string | string[] | number | number[] | boolean | undefined;
 
 export function equalValueCheckerHelper(value1: ValueType, value2: ValueType) {
   if (value1 !== value2) return false;

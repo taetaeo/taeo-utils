@@ -4,7 +4,7 @@
  * @returns {string}
  */
 
-type UnitsType = {
+export type UnitsType = {
   year: string;
   month: string;
   day: string;

@@ -5,9 +5,9 @@
  *
  * ex) input = 2023-01-01 00:00:00 / output = [2023-01-01, 00:00:00]은 시간
  */
+export type InputType = string | undefined | null;
 
-type InputType = string | undefined | null;
-type OutPutType = string | [string, string];
+export type OutPutType = string | [string, string];
 
 export function timeSplitFormatHelper(inputTime: InputType): OutPutType {
   if (!inputTime) {

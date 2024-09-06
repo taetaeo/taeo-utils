@@ -6,7 +6,7 @@
  *
  */
 export type ResultType = string;
-export function extractionOnlyAlphabetHelper<T>(inputText: T): ResultType {
+export function extractionOnlyAlphabet<T>(inputText: T): ResultType {
   let result: ResultType;
   console.assert(typeof inputText === "string", `결과 실패 : 입력값( ${inputText} )`);
   if (typeof inputText !== "string") {

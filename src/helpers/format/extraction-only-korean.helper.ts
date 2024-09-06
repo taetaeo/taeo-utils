@@ -8,7 +8,7 @@
 
 type ResultType = string;
 
-export function extractionOnlyKoreanHelper<T>(inputText: T): ResultType {
+export function extractionOnlyKorean<T>(inputText: T): ResultType {
   let result: ResultType;
   console.assert(typeof inputText === "string", `결과 실패 : 입력값( ${inputText} )`);
   if (typeof inputText !== "string") {

@@ -9,7 +9,7 @@ export type InputType = string | undefined | null;
 
 export type OutPutType = string | [string, string];
 
-export function timeSplitFormatHelper(inputTime: InputType): OutPutType {
+export function timeSplitFormat(inputTime: InputType): OutPutType {
   if (!inputTime) {
     console.assert(false, "timeSplitFormatHelper에 비어있는 값이 전달되었습니다.");
     return "";

@@ -4,7 +4,7 @@
  * @returns {boolean} true / false : ref가 있을 경우 true 없을 경우 false
  */
 
-export function isRefCheckerHelper(ref: unknown) {
+export function isRefChecker(ref: unknown) {
   console.assert(ref, `isRefCheckerHelper에서 잘못된 매개변수가 입력되었습니다. 입력 :  ${ref}`);
 
   if (ref && typeof ref === "object" && "current" in ref) {

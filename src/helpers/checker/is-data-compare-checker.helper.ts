@@ -7,7 +7,7 @@
  * @param compareData - 비교군 데이터
  * @returns {boolean} true / false - 비교 결과 불린(boolean)값으로 반환이 된다.
  */
-export function isDataCompareCheckerHelper<T>(data: T, compareData: T): boolean {
+export function isDataCompareChecker<T>(data: T, compareData: T): boolean {
   const result = data === compareData;
 
   console.assert(result, `isVariantCheckerHelper에서의 결과 실패 : data는 ${data}이며, compareData는 ${compareData} 서로 같지 않습니다.`);

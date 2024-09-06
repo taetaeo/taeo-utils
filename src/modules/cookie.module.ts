@@ -15,7 +15,7 @@ export interface CookieOptions {
  */
 
 function getCookie(name: string): string | null {
-  return Cookies.get(name) || null;
+  return Cookies?.get(name) || null;
 }
 
 /**
@@ -25,7 +25,7 @@ function getCookie(name: string): string | null {
  * @param options - 쿠키 설정에 사용할 옵션
  */
 function setCookie(name: string, value: string, options?: CookieOptions): void {
-  Cookies.set(name, value, options);
+  Cookies?.set(name, value, options);
 }
 
 /**
@@ -34,7 +34,7 @@ function setCookie(name: string, value: string, options?: CookieOptions): void {
  * @param options - 쿠키 삭제에 사용할 옵션
  */
 function deleteCookie(name: string, options?: CookieOptions): void {
-  Cookies.remove(name, options);
+  Cookies?.remove(name, options);
 }
 
 export default (function () {

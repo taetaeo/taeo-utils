@@ -4,7 +4,7 @@
  * @returns {string} '123'
  */
 
-export function onlyNumberValidateHelper(input: string) {
+export function onlyNumberValidate(input: string) {
   const result = input.replace(/[^0-9]/g, "");
 
   console.assert(result, `결과: onlyNumberValidate에서 ${input}이 입력되었고, 빈문자열이 반환되었습니다.`);

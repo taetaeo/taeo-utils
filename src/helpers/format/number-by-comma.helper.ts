@@ -4,7 +4,7 @@
  * @returns
  */
 
-export function numberByCommaHelper(number: number) {
+export function numberByComma(number: number) {
   try {
     // 숫자를 쉼표로 구분된 문자열로 변환
     const formattedNumber = typeof number === "number" ? number.toLocaleString() : number;

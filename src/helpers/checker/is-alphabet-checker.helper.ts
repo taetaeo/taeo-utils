@@ -6,7 +6,7 @@
 
 export type AlphabetType = string;
 
-export function isAlphabetCheckerHelper(alphabet: AlphabetType) {
+export function isAlphabetChecker(alphabet: AlphabetType) {
   const isValid = /^[a-zA-Z\s]+$/.test(alphabet);
   console.assert(typeof isValid === "boolean", `결과 : ${alphabet} 확인이 실패하였습니다.`);
   return isValid;

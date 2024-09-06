@@ -5,7 +5,7 @@
  * @param {string} inputTime ex) 00:00:00
  * @returns 00시 00분 00초
  */
-export function timeToKoreanStringHelper(inputTime: string) {
+export function timeToKoreanString(inputTime: string) {
   const [hour, minute, seconds] = inputTime.split(":");
 
   const notValidCondition = !hour && !minute && !seconds;

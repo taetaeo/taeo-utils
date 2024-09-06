@@ -33,7 +33,11 @@
     "build": "npm run clean && npm run build:tsc && npm run build:js",
     "build:tsc": "tsc --emitDeclarationOnly",
     "build:js": "node build.js",
-    "clean": "rm -rf dist"
+    "clean": "rm -rf dist",
+    "test:validates": "jest --testPathPattern='src/__tests__/validates/'",
+    "test:languages": "jest --testPathPattern='src/__tests__/languages/'",
+    "test:forms": "jest --testPathPattern='src/__tests__/forms/'",
+    "test:dates": "jest --testPathPattern='src/__tests__/dates/'"
   },
   "dependencies": {
     "@types/node": "^20.11.5",
@@ -41,7 +45,7 @@
     "js-cookie": "^3.0.5"
   },
   "devDependencies": {
-    "@types/jest": "^29.5.11",
+    "@types/jest": "^29.5.12",
     "@types/js-cookie": "^3.0.6",
     "esbuild": "^0.19.11",
     "jest": "^29.7.0",

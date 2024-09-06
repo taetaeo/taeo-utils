@@ -7,11 +7,13 @@
  * @param {number} plusYear
  * @returns {string} yyyy-mm-dd hh:mm:ss
  */
-export function datePlusYearHelper(inputDate: string, plusYear: number = 2) {
+export type ReturnType = "Invalid Date" | null | string | "0000-00-00";
+
+export function datePlusYear(inputDate: string, plusYear: number = 2): ReturnType {
   try {
     console.assert(!inputDate, `결과 : datePlusYearHelper에서 ${inputDate} 확인이 실패하였습니다.`);
 
-    if (!inputDate) return;
+    if (!inputDate) return null;
 
     let currentDate: Date = new Date(inputDate);
 

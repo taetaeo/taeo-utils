@@ -7,7 +7,7 @@
  *  11 자리인 경우 : 010-1234-5678로 나타내도록 하기 위해 ['010','1234','5678']로 출력
  */
 
-export function phoneNumberToArrayHelper(phoneNumber: string = "") {
+export function phoneNumberToArray(phoneNumber: string = "") {
   // 입력값이 문자열인지 확인
   console.assert(typeof phoneNumber === "string", `결과: phoneNumberToArrayHelper에서 문자열이 아닌 값(${phoneNumber})이 입력되었습니다.`);
 

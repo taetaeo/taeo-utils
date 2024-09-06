@@ -6,7 +6,11 @@
  * @param {string} korean - 조사가 필요한 한국어의 주어
  * @returns {string} 결과값으로 한국어의 조사에 '가/이'가 붙어서 출력이 된다.
  */
-export function koreanSubjectParticleModifyer(korean: string): string {
+export function koreanSubjectParticleModifyer(korean: string): string | null {
+  const pattern = /[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/;
+
+  if (!pattern.test(korean)) return null;
+
   // name의 마지막 음절의 유니코드(UTF-16)
   const charCode = korean.charCodeAt(korean.length - 1);
 
@@ -27,7 +31,7 @@ export function koreanSubjectParticleModifyer(korean: string): string {
   const result = `${korean}${particle}`;
 
   // 예상과 다를 경우 에러를 출력
-  console.assert(result === koreanSubjectParticleModifyer(korean), `결과 실패: 한국어(${korean}) 가 입력되어 예상치 못한 결과가 발생했습니다.`);
+  // console.assert(result === koreanSubjectParticleModifyer(korean), `결과 실패: 한국어(${korean}) 가 입력되어 예상치 못한 결과가 발생했습니다.`);
 
   return result;
 }

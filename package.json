@@ -38,7 +38,8 @@
     "test:validates": "jest --testPathPattern='src/__tests__/validates/'",
     "test:languages": "jest --testPathPattern='src/__tests__/languages/'",
     "test:forms": "jest --testPathPattern='src/__tests__/forms/'",
-    "test:dates": "jest --testPathPattern='src/__tests__/dates/'"
+    "test:dates": "jest --testPathPattern='src/__tests__/dates/'",
+    "test:formats": "jest --testPathPattern='src/__tests__/formats/'"
   },
   "dependencies": {
     "@types/node": "^20.11.5",

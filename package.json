@@ -35,11 +35,13 @@
     "release": "sh ./scripts/release.sh",
     "clean": "rm -rf dist",
     "test": "jest",
+    "coverage": "jest --coverage",
     "test:validates": "jest --testPathPattern='src/__tests__/validates/'",
     "test:languages": "jest --testPathPattern='src/__tests__/languages/'",
     "test:forms": "jest --testPathPattern='src/__tests__/forms/'",
     "test:dates": "jest --testPathPattern='src/__tests__/dates/'",
-    "test:formats": "jest --testPathPattern='src/__tests__/formats/'"
+    "test:formats": "jest --testPathPattern='src/__tests__/formats/'",
+    "test:utils": "jest --testPathPattern='src/__tests__/utils/'"
   },
   "dependencies": {
     "@types/node": "^20.11.5",

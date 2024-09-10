@@ -22,7 +22,7 @@ Promise.all([
       format: "esm",
     })
     .catch(() => {
-      console.error("Build Faild");
+      console.error("Build Failed");
       process.exit(1);
     }),
 ]);

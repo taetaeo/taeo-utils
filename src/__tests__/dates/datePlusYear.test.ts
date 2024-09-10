@@ -1,6 +1,6 @@
 import { datePlusYear } from "../../helpers";
 
-describe("datePlusYear", () => {
+describe("datePlusYear는 특정 년도에서 두 번째 파라미터 값을 추가한 년도를 반환하는 함수입니다. ", () => {
   it(`입력 -> '2023-11-09 14:33:51', 2년 추가
       결과 -> '2025' `, () => {
     const result = datePlusYear("2023-11-09 14:33:51", 2);
@@ -28,7 +28,7 @@ describe("datePlusYear", () => {
   it(`입력 -> 빈 문자열('')
       결과 -> 'null'`, () => {
     const result = datePlusYear("", 2);
-    expect(result).toEqual(null);
+    expect(result).toBeNull();
   });
 
   it(`입력 -> 잘못된 날짜 형식('invalid-date')

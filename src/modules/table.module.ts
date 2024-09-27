@@ -1,6 +1,6 @@
 import type { keyAble } from "../types";
 
-class TableManager {
+export class TableManager {
   private columns: keyAble[] = [];
 
   constructor(initialHeaders: string[] = []) {
@@ -84,4 +84,3 @@ class TableManager {
     this.columns = [];
   }
 }
-export default TableManager;

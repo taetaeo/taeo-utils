@@ -37,10 +37,8 @@ function deleteCookie(name: string, options?: CookieOptions): void {
   Cookies?.remove(name, options);
 }
 
-export default (function () {
-  return {
-    get: getCookie,
-    SET: setCookie,
-    delete: deleteCookie,
-  };
-})();
+export const CookieManager = {
+  get: getCookie,
+  SET: setCookie,
+  delete: deleteCookie,
+};

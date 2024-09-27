@@ -1,3 +1,1 @@
-export * from "./classNames";
-
-export type * from "./classNames";
+export * from "./classNames.util";

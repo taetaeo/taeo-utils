@@ -2,7 +2,7 @@
  * 제네릭 타입을 적용한 배열을 다루는 기본 클래스입니다.
  * @template A - 배열 요소의 타입을 나타내는 제네릭 타입 매개변수입니다.
  */
-class TaeoArray<A> {
+export class TaeoArray<A> {
   /**
    * 제네릭 타입을 받아와 배열 타입을 적용하는 생성자입니다.
    * @param {A[]} items - 초기 배열을 전달받습니다.
@@ -14,7 +14,8 @@ class TaeoArray<A> {
  * TaeoArray를 확장한 스택(Stack) 클래스입니다.
  * @template S - 스택 요소의 타입을 나타내는 제네릭 타입 매개변수입니다.
  */
-class Stack<S> extends TaeoArray<S> {
+
+export class Stack<S> extends TaeoArray<S> {
   /**
    * 스택에 요소를 추가합니다.
    * @param {S} item - 스택에 추가할 요소입니다.

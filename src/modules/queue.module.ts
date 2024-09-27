@@ -14,7 +14,7 @@ class TaeoArray<A> {
  * TaeoArray를 확장한 큐(Queue) 클래스입니다.
  * @template Q - 큐 요소의 타입을 나타내는 제네릭 타입 매개변수입니다.
  */
-class Queue<Q> extends TaeoArray<Q> {
+export class Queue<Q> extends TaeoArray<Q> {
   /**
    * 큐에 요소를 추가합니다.
    * @param {Q} item - 큐에 추가할 요소입니다.
@@ -31,5 +31,3 @@ class Queue<Q> extends TaeoArray<Q> {
     return this.items.shift();
   }
 }
-
-export default Queue;

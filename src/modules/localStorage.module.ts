@@ -114,9 +114,8 @@ function stringifyJsonData<T>(data: T): string {
 }
 
 // 기존 함수들을 사용하는 방식과 동일하게 동작하는 모듈 객체를 생성합니다.
-const localStorageManager = {
+export const localStorageManager = {
   get,
   set,
   delete: _delete,
 };
-export default localStorageManager;

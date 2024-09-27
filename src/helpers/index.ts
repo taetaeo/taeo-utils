@@ -20,3 +20,4 @@ export * from "./format/time-to-korean-string.helper";
 export * from "./language/korean-subject-particle-modify.helper";
 
 export * from "./validate/only-number-validate.helper";
+export * from "./validate/is-email-validate.helper";

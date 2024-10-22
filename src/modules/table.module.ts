@@ -10,7 +10,7 @@ export class TableManager {
   }
 
   // 열 생성 메서드
-  createTableColumns(headers: string[]): keyAble[] {
+  createTableColumns(headers: unknown[] | string[]): keyAble[] {
     if (!headers || headers.length === 0) {
       throw new Error("⚠️ 테이블을 생성할 수 없습니다. - header 설정을 다시 확인해주세요.");
     }

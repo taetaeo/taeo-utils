@@ -3,14 +3,14 @@ import type { keyAble } from "../types";
 export class TableManager {
   private columns: keyAble[] = [];
 
-  constructor(initialHeaders: keyAble[] = []) {
+  constructor(initialHeaders: (string | unknown)[] = []) {
     if (initialHeaders.length > 0) {
       this.createTableColumns(initialHeaders);
     }
   }
 
   // 열 생성 메서드
-  createTableColumns(headers: keyAble[]): keyAble[] {
+  createTableColumns(headers: (string | unknown)[]): keyAble[] {
     if (!headers || headers.length === 0) {
       throw new Error("⚠️ 테이블을 생성할 수 없습니다. - header 설정을 다시 확인해주세요.");
     }
